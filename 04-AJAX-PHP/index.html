@@ -1,0 +1,56 @@
+<!--
+    1. Un formulaire permettant l'inscription d'un utilisateur à une
+    newsletter.Vous utiliserez Bootsrap.
+
+        -email
+        -prenom
+        -nom
+
+    2.Effectuer la validation JQuery des données du formulaire.
+    //////////////////////////////////////////////////////////////////////////////////////////
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head><!--///////////////////////////////////HEAD//////////////////////////////////////////-->
+    <!--Meta-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Title-->
+    <title>Formulaire</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Mon Css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head><!--///////////////////////////////////HEAD/////////////////////////////////////////-->
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto mt-3">
+                <h2 class="mt-1 text-center">AJAX PHP</h2>
+                <h4 id="fdp"></h4>
+                <form method="POST" id="form">
+                    <!--Name-->
+                    <div class="form-group a">
+                        <input class="form-control" id="name" type="text" placeholder="Name">
+                    </div>
+                    <!--Email-->
+                    <div class="form-group a">
+                        <input class="form-control" id="email" type="email" placeholder="Email">
+                    </div>
+                    <!--Password-->
+                    <div class="form-group a">
+                        <input class="form-control" id="password" type="password" placeholder="Password">
+                    </div>
+                    <!--Submit-->
+                    <button type="button" disabled="disabled" class="btn btn-secondary btn-lg btn-block">Submit</button>
+                </form>
+            </div><!--col-->
+        </div><!--row-->
+    </div><!--container-->
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Mon JS-->
+    <script src="requierd.js"></script>
+</body>
+</html>
