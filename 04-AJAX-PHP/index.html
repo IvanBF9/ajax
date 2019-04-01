@@ -29,21 +29,21 @@
             <div class="col-md-6 mx-auto mt-3">
                 <h2 class="mt-1 text-center">AJAX PHP</h2>
                 <h4 id="fdp"></h4>
-                <form method="POST" id="form">
+                <form method="POST" novalidate action="newsletter.php" id="newsletter">
                     <!--Name-->
                     <div class="form-group a">
-                        <input class="form-control" id="name" type="text" placeholder="Name">
+                        <input class="form-control" name="prenom" type="text" placeholder="Name">
+                    </div>
+                    <!--Nom-->
+                    <div class="form-group a">
+                        <input class="form-control" name="nom" type="text" placeholder="First name">
                     </div>
                     <!--Email-->
                     <div class="form-group a">
-                        <input class="form-control" id="email" type="email" placeholder="Email">
-                    </div>
-                    <!--Password-->
-                    <div class="form-group a">
-                        <input class="form-control" id="password" type="password" placeholder="Password">
+                        <input class="form-control" name="email" type="email" placeholder="Email">
                     </div>
                     <!--Submit-->
-                    <button type="button" disabled="disabled" class="btn btn-secondary btn-lg btn-block">Submit</button>
+                    <button type="submit" class="btn btn-secondary btn-lg btn-block">Submit</button>
                 </form>
             </div><!--col-->
         </div><!--row-->
